@@ -1,0 +1,100 @@
+Unit testing allows the programmer to refactor code or upgrade system libraries at a later date, and make sure the module still works correctly (e.g., in regression testing). The procedure is to write test cases for all functions and methods so that whenever a change causes a fault, it can be quickly identified.
+
+
+UNIT TESTING is a level of software testing where individual units/ components of a software are tested. The purpose is to validate that each unit of the software performs as designed. A unit is the smallest testable part of any software. It usually has one or a few inputs and usually a single output.
+
+
+------------------------------------------------------------------------------
+
+1))))create local repository 
+
+iet@iet-HP:~/Desktop/190845920074/Git$ git init
+Initialized empty Git repository in /home/iet/Desktop/190845920074/Git/.git/
+
+
+iet@iet-HP:~/Desktop/190845920074/Git$git add -A
+
+iet@iet-HP:~/Desktop/190845920074/Git$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   homepage.php
+
+-------------------------------------------------------------------------------
+2))))commit code
+
+
+iet@iet-HP:~/Desktop/190845920074/Git$ git commit -m "first commit"
+[master (root-commit) 6e61e6d] first commit
+ 1 file changed, 9 insertions(+)
+ create mode 100644 homepage.php
+
+----------------------------------------------------------------------------
+3)))updated Code difference
+
+diff --git a/homepage.php b/homepage.php
+deleted file mode 100644
+index e06273a..0000000
+--- a/homepage.php
++++ /dev/null
+@@ -1,9 +0,0 @@
+-<html>
+-<head> <title> Homepage </title>
+-</head>
+-<body>
+-
+-Hello.
+-
+-</body>
+-</html>
+
+---------------------------------------------------------------------------
+4))Get updated file 
+
+
+iet@iet-HP:~/Desktop/190845920074$ git add -A
+iet@iet-HP:~/Desktop/190845920074$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   Git
+	new file:   chklogin.php
+	new file:   shruti.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Git (modified content, untracked content)
+
+iet@iet-HP:~/Desktop/190845920074$ 
+
+-------------------------------------------------------------------
+*******List the changes
+
+
+
+-------------------------------------------------------------------
+********create a branch
+
+iet@iet-HP:~/Desktop/190845920074$ git branch MyBranch
+iet@iet-HP:~/Desktop/190845920074$ git branch -a
+  MyBranch
+* master
+----------------------------------------------------------------------
+**********merge branch
+
+iet@iet-HP:~/Desktop/190845920074$ git merge MyBranch
+Already up to date.
+
+
+
